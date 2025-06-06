@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda Interativa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Agenda Interativa</h1>
+    <button id="darkModeToggle">🌙</button>
+  </header>
+
+  <main>
+    <form id="form">
+      <input type="text" id="titulo" placeholder="Título" required />
+      <textarea id="descricao" placeholder="Descrição"></textarea>
+      <input type="datetime-local" id="inicio" required />
+      <input type="datetime-local" id="fim" required />
+      <select id="categoria" required>
+        <option value="">Categoria</option>
+        <option value="Trabalho">Trabalho</option>
+        <option value="Estudo">Estudo</option>
+        <option value="Pessoal">Pessoal</option>
+      </select>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <div>
+      <label for="filtro">Filtrar por categoria:</label>
+      <select id="filtro">
+        <option value="">Todos</option>
+        <option value="Trabalho">Trabalho</option>
+        <option value="Estudo">Estudo</option>
+        <option value="Pessoal">Pessoal</option>
+      </select>
+    </div>
+
+    <section id="lista-compromissos"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Desenvolvido por Você</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
